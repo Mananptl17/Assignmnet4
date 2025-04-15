@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  metadatas -->
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <title>NASA API</title> 
+  <link rel="stylesheet" href="css/style.css" /> <!-- css -->
+  <script src="js/script.js" defer></script> <!--js  -->
+</head>
+<body>
+  <!--  header -->
+  <header> 
+    <h1>NASA Mars Explorer</h1> 
+    <p id="student-info"></p> <!-- student info -->
+    
+  
+  </header>
+<!-- main content -->
+  <main> 
+    <!-- image section -->
+    <section> 
+      <h2>Search Mars Images</h2> 
+      <!-- working -->
+      <p>This web application connects to NASA's public APIs to provide you with real-time data and images from Mars. You can search for specific Mars-related images, view a daily photo taken by the Curiosity Rover, and see the latest weather data collected from the InSight lander.</p> 
+      <p class="hint">Try searching for: <strong>craters, Olympus Mons, rover, dust storm, sunset, landscape</strong></p> 
+      <input type="text" id="searchInput" placeholder="Enter Mars image topic..." /> 
+      <!--  search button -->
+      <button id="searchBtn">Search</button> 
+      <div id="image-gallery" class="grid"></div> 
+    </section>
+<!-- weather section -->
+    <section> 
+      <h2>Latest Mars Weather</h2> 
+      <div id="mars-weather"></div> 
+    </section>
+  </main>
+
+
+</body>
+</html>
